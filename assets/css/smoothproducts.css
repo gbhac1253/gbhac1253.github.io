@@ -173,3 +173,13 @@ html, body {
   }
 }
 
+.four {
+  /*font-size: 30px;*/
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 30px;
+  text-align: center;
+  /*color: #3b99e0;*/
+}
+
