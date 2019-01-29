@@ -183,3 +183,9 @@ html, body {
   /*color: #3b99e0;*/
 }
 
+@media (min-width:576px) {
+  .clean-block {
+    padding-bottom: 0px;
+  }
+}
+
