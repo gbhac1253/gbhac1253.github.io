@@ -3,24 +3,14 @@ import { Heart, Users, HandHeart, Lightbulb } from "lucide-react";
 
 const coreValues = [
   {
-    icon: Heart,
-    title: "Faith",
-    description: "Trusting in Jesus Christ as our Lord and Savior, growing in our relationship with God through prayer, worship, and scripture."
-  },
-  {
     icon: Users,
-    title: "Community",
-    description: "Building meaningful relationships and supporting one another as we journey together in faith and life."
+    title: "Great Commission",
+    description: "Making disciples of all nations, baptizing them and teaching them to observe all that Jesus commanded us."
   },
   {
-    icon: HandHeart,
-    title: "Service",
-    description: "Serving God by serving others, both within our church family and in our broader Green Bay community."
-  },
-  {
-    icon: Lightbulb,
-    title: "Hope",
-    description: "Sharing the hope of Christ with others and being a beacon of light in our community and beyond."
+    icon: Heart,
+    title: "Greatest Commandment",
+    description: "Loving God with all our heart, soul, mind, and strength, and loving our neighbors as ourselves."
   }
 ];
 
@@ -40,7 +30,7 @@ const About = () => {
         </div>
         
         {/* Core Values */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {coreValues.map((value, index) => {
             const Icon = value.icon;
             return (
