@@ -57,7 +57,7 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <p>1253 Mather Street<br />Green Bay, WI 54303</p>
               <p>(920) 555-0123</p>
-              <p>info@gbhmongalliancechurch.org</p>
+              <p>hello@gbhac.org</p>
               <div className="pt-4">
                 <p className="font-medium text-primary-foreground">Sunday Worship</p>
                 <p>10:00 AM - 12:00 PM</p>
