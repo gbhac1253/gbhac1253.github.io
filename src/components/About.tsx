@@ -33,7 +33,7 @@ const About = () => {
             Welcome to Our Church Family
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For over two decades, Green Bay Hmong Alliance Church has been a cornerstone of faith and 
+            For 40 years, Green Bay Hmong Alliance Church has been a cornerstone of faith and 
             community in Green Bay, Wisconsin. We are a vibrant congregation dedicated to worshipping 
             God, growing in faith, and serving our neighbors with love and compassion.
           </p>
