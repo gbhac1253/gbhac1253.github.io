@@ -74,7 +74,7 @@ const Services = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2 text-foreground">Address</h4>
                     <p className="text-muted-foreground mb-2">
-                      1234 Community Lane<br />
+                      1253 Mather Street<br />
                       Green Bay, WI 54303
                     </p>
                     <Button variant="link" className="p-0 h-auto text-primary hover:text-primary-light">
@@ -123,7 +123,7 @@ const Services = () => {
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <p className="text-muted-foreground">Interactive map will be embedded here</p>
-                <p className="text-sm text-muted-foreground mt-2">1234 Community Lane, Green Bay, WI 54303</p>
+                <p className="text-sm text-muted-foreground mt-2">1253 Mather Street, Green Bay, WI 54303</p>
               </div>
             </div>
           </Card>
