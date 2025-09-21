@@ -67,11 +67,11 @@ const About = () => {
         <div className="text-center animate-fade-in-up">
           <Card className="p-8 max-w-2xl mx-auto border-0 bg-primary/5 backdrop-blur-sm">
             <blockquote className="text-xl md:text-2xl font-serif italic text-foreground mb-4 leading-relaxed">
-              "The eye is the lamp of the body. If your eyes are healthy, 
-              your whole body will be full of light."
+              "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, 
+              for you are all one in Christ Jesus."
             </blockquote>
             <cite className="text-muted-foreground font-medium">
-              Matthew 6:22
+              Galatians 3:28
             </cite>
           </Card>
         </div>
