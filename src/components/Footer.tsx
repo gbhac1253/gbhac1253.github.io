@@ -23,7 +23,7 @@ const Footer = () => {
               Green Bay Hmong Alliance Church
             </h3>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
-              A welcoming Hmong community following Jesus, seeking to love God and serve our neighbors in Green Bay, Wisconsin.
+              A welcoming community following Jesus, seeking to love God and serve our neighbors in Green Bay, Wisconsin.
             </p>
             <div className="flex items-center text-primary-foreground/80">
               <span>Made with</span>
@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-serif font-semibold mb-6">Visit Us</h4>
             <div className="space-y-3 text-primary-foreground/80">
-              <p>1234 Community Lane<br />Green Bay, WI 54303</p>
+              <p>1253 Mather Street<br />Green Bay, WI 54303</p>
               <p>(920) 555-0123</p>
               <p>info@gbhmongalliancechurch.org</p>
               <div className="pt-4">
