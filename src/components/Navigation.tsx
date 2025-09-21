@@ -92,16 +92,16 @@ const Navigation = () => {
 
         {/* Mobile Navigation - Button Grid */}
         <div className="md:hidden mt-4 pb-2">
-          <div className="grid grid-cols-4 gap-2 px-2">
+          <div className="grid grid-cols-2 gap-2 px-2">
             {navItems.map((item) => (
               <Button
                 key={item.name}
                 variant="ghost"
                 size="sm"
-                className="text-foreground hover:text-primary hover:bg-primary/10 text-xs p-2 h-auto flex flex-col"
+                className="text-foreground hover:text-primary hover:bg-primary/10 text-sm p-3 h-auto flex flex-col justify-center"
                 onClick={() => handleNavClick(item.href)}
               >
-                <span className="truncate w-full text-center">{item.name}</span>
+                <span className="w-full text-center leading-tight">{item.name}</span>
               </Button>
             ))}
           </div>
