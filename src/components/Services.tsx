@@ -10,9 +10,6 @@ const Services = () => {
           <h2 className="text-heading font-serif font-semibold mb-6">
             Service Times & Location
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join us for worship and fellowship. Everyone is welcome to be part of our church family.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
