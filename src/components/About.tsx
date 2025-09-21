@@ -67,11 +67,11 @@ const About = () => {
         <div className="text-center animate-fade-in-up">
           <Card className="p-8 max-w-2xl mx-auto border-0 bg-primary/5 backdrop-blur-sm">
             <blockquote className="text-xl md:text-2xl font-serif italic text-foreground mb-4 leading-relaxed">
-              "Trust in the Lord with all your heart and lean not on your own understanding; 
-              in all your ways submit to him, and he will make your paths straight."
+              "The eye is the lamp of the body. If your eyes are healthy, 
+              your whole body will be full of light."
             </blockquote>
             <cite className="text-muted-foreground font-medium">
-              Proverbs 3:5-6
+              Matthew 6:22
             </cite>
           </Card>
         </div>
