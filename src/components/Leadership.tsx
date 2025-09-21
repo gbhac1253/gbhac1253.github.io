@@ -18,14 +18,15 @@ const Leadership = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-heading font-serif font-semibold mb-6">
-            Our Pastoral Team
+            Our Pastor
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Meet the dedicated leaders who shepherd our congregation and guide us in our spiritual journey.
+            Meet our dedicated pastor who shepherds our congregation and guides us in our spiritual journey.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="flex justify-center">
+          <div className="max-w-md">{/* This centers the single pastor card */}
           {pastors.map((pastor, index) => (
             <Card 
               key={pastor.name}
@@ -74,6 +75,7 @@ const Leadership = () => {
               </div>
             </Card>
           ))}
+          </div>
         </div>
         
         {/* Additional Leadership Note */}
