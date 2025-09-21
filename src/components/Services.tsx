@@ -46,10 +46,10 @@ const Services = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2 text-foreground">Midweek Small Groups</h4>
-                    <p className="text-muted-foreground mb-2">Wednesday 7:00 PM - 8:30 PM</p>
+                    <h4 className="text-xl font-semibold mb-2 text-foreground">Midweek Prayers Night</h4>
+                    <p className="text-muted-foreground mb-2">Wednesday 6:00 PM - 8:00 PM</p>
                     <p className="text-sm text-muted-foreground">
-                      Bible study, prayer, and fellowship in smaller groups throughout the community.
+                      Time to join together in prayer, seeking God's presence and interceding for our community.
                     </p>
                   </div>
                 </div>
