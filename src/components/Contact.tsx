@@ -47,7 +47,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-2 text-foreground">Email</h4>
-                    <p className="text-muted-foreground">info@gbhmomlliancechurch.org</p>
+                    <p className="text-muted-foreground">hello@gbhac.org</p>
                   </div>
                 </div>
                 
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-2 text-foreground">Address</h4>
                     <p className="text-muted-foreground">
-                      1234 Community Lane<br />
+                      1253 Mather Street<br />
                       Green Bay, WI 54303
                     </p>
                   </div>
