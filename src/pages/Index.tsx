@@ -7,7 +7,6 @@ import Services from "@/components/Services";
 import Leadership from "@/components/Leadership";
 import Ministries from "@/components/Ministries";
 import Resources from "@/components/Resources";
-import CallToAction from "@/components/CallToAction";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -23,7 +22,7 @@ const Index = () => {
       <Leadership />
       <Ministries />
       <Resources />
-      <CallToAction />
+      
       <Contact />
       <Footer />
     </div>
