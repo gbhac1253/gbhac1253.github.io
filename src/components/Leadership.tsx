@@ -5,7 +5,7 @@ const pastors = [
   {
     name: "Pastor Chao Xiong",
     title: "Senior Pastor",
-    description: "Leading our congregation with wisdom and compassion, Pastor Chao Xiong is dedicated to teaching God's word and shepherding our church family.",
+    description: "Pastor Chao Xiong leads our church through preaching, teaching, disciple-making, spiritual guidance, and pastoral care for the congregation.",
     email: "pastor@gbhac.org",
     phone: "(920) XXX-XXXX",
     image: "/placeholder.svg" // Replace with actual pastor photo
