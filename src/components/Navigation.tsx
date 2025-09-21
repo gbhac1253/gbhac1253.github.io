@@ -37,10 +37,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-background/95 backdrop-blur-md shadow-soft' 
-        : 'bg-transparent'
+        : 'bg-background'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -91,17 +91,17 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation - Button Grid */}
-        <div className="md:hidden mt-4 pb-2">
-          <div className="grid grid-cols-2 gap-2 px-2">
+        <div className="md:hidden mt-2 pb-2">
+          <div className="grid grid-cols-4 gap-1 px-2">
             {navItems.map((item) => (
               <Button
                 key={item.name}
                 variant="ghost"
                 size="sm"
-                className="text-foreground hover:text-primary hover:bg-primary/10 text-sm p-3 h-auto flex flex-col justify-center"
+                className="text-foreground hover:text-primary hover:bg-primary/10 text-xs px-1 py-2 h-auto flex flex-col justify-center min-h-[2.5rem]"
                 onClick={() => handleNavClick(item.href)}
               >
-                <span className="w-full text-center leading-tight">{item.name}</span>
+                <span className="w-full text-center leading-tight text-[10px]">{item.name}</span>
               </Button>
             ))}
           </div>
