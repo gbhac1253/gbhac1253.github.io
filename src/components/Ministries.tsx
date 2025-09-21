@@ -4,9 +4,9 @@ import { Users, Baby, Zap, Heart, Globe, Coffee } from "lucide-react";
 const ministries = [
   {
     icon: Zap,
-    title: "Youth & Young Adults",
-    description: "Dynamic programs for teens and young adults, focusing on faith development, leadership training, and community service.",
-    ageGroup: "Ages 13-30"
+    title: "Youth",
+    description: "Dynamic programs for teenagers focusing on faith development, leadership training, and community service.",
+    ageGroup: "Ages 13-18"
   },
   {
     icon: Baby,
@@ -34,9 +34,9 @@ const ministries = [
   },
   {
     icon: Users,
-    title: "Fellowship Events",
-    description: "Community gatherings, cultural celebrations, and special events that bring our church family together.",
-    ageGroup: "All Ages"
+    title: "Young Adults and Young Couples",
+    description: "Programs and activities for young adults and couples building their faith, relationships, and community connections.",
+    ageGroup: "18 and older"
   }
 ];
 
