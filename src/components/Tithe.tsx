@@ -24,7 +24,7 @@ const Tithe = () => {
             variant="primary" 
             size="lg"
             className="group min-w-[200px]"
-            onClick={() => window.open('https://tithe.ly', '_blank')}
+            onClick={() => window.open('https://tithe.ly/give_new/www/#/tithely/give-one-time/1522345', '_blank')}
           >
             <DollarSign className="mr-2 h-5 w-5" />
             Give Online
