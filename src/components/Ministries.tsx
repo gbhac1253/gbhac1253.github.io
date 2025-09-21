@@ -22,9 +22,9 @@ const ministries = [
   },
   {
     icon: Coffee,
-    title: "Small Groups",
-    description: "Intimate fellowship groups that meet throughout the week for Bible study, prayer, and community building.",
-    ageGroup: "All Ages"
+    title: "Seniors",
+    description: "Fellowship and activities for our senior members, providing opportunities for connection, spiritual growth, and community.",
+    ageGroup: "55+"
   },
   {
     icon: Globe,
