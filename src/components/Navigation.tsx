@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,7 +25,6 @@ const Navigation = () => {
   ];
 
   const handleNavClick = (href: string) => {
-    setIsMenuOpen(false);
     if (href === "#") {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
@@ -74,36 +71,41 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+        </div>
+
+        {/* Tablet Navigation - Horizontal Scrollable Tabs */}
+        <div className="hidden md:flex lg:hidden overflow-x-auto scrollbar-hide mt-4 pb-2">
+          <div className="flex space-x-2 min-w-max px-2">
+            {navItems.map((item) => (
+              <Button
+                key={item.name}
+                variant="ghost"
+                size="sm"
+                className="text-foreground hover:text-primary hover:bg-primary/10 whitespace-nowrap"
+                onClick={() => handleNavClick(item.href)}
+              >
+                {item.name}
+              </Button>
+            ))}
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md rounded-lg mt-2 shadow-card">
-              {navItems.map((item) => (
-                <Button
-                  key={item.name}
-                  variant="ghost"
-                  className="w-full justify-start text-foreground hover:text-primary hover:bg-primary/10"
-                  onClick={() => handleNavClick(item.href)}
-                >
-                  {item.name}
-                </Button>
-              ))}
-            </div>
+        {/* Mobile Navigation - Button Grid */}
+        <div className="md:hidden mt-4 pb-2">
+          <div className="grid grid-cols-4 gap-2 px-2">
+            {navItems.map((item) => (
+              <Button
+                key={item.name}
+                variant="ghost"
+                size="sm"
+                className="text-foreground hover:text-primary hover:bg-primary/10 text-xs p-2 h-auto flex flex-col"
+                onClick={() => handleNavClick(item.href)}
+              >
+                <span className="truncate w-full text-center">{item.name}</span>
+              </Button>
+            ))}
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
