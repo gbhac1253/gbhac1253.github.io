@@ -20,7 +20,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-heading font-serif font-semibold mb-6">
-            Welcome to Our Church Family
+            About Our Church
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             For 40 years, Green Bay Hmong Alliance Church has been a cornerstone of faith and 
