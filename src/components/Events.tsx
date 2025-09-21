@@ -19,14 +19,16 @@ const Events = () => {
         {/* Google Calendar Section */}
         <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <Card className="p-8 border-0 bg-card shadow-card">
-            <div className="bg-muted rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center">
-                <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                <p className="text-muted-foreground">Google Calendar will be embedded here</p>
-                <p className="text-sm text-muted-foreground mt-2">
-                  View all church events, services, and activities in one place
-                </p>
-              </div>
+            <div className="w-full overflow-hidden rounded-lg">
+              <iframe 
+                src="https://calendar.google.com/calendar/embed?src=gbhac1253%40gmail.com&ctz=America%2FChicago" 
+                style={{ border: 0 }} 
+                width="100%" 
+                height="600" 
+                frameBorder="0" 
+                scrolling="no"
+                className="w-full"
+              />
             </div>
           </Card>
         </div>
