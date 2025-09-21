@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const LiveBanner = () => {
   // Change this to true when going live, false when not
-  const isLive = false; // <-- CHANGE THIS TO TRUE WHEN LIVE
+  const isLive = true; // <-- CHANGE THIS TO TRUE WHEN LIVE
   
   const [isVisible, setIsVisible] = useState(isLive);
 
