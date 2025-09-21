@@ -77,7 +77,11 @@ const Services = () => {
                       1253 Mather Street<br />
                       Green Bay, WI 54303
                     </p>
-                    <Button variant="link" className="p-0 h-auto text-primary hover:text-primary-light">
+                    <Button 
+                      variant="link" 
+                      className="p-0 h-auto text-primary hover:text-primary-light"
+                      onClick={() => window.open('https://www.google.com/maps/dir//1253+Mather+St,+Green+Bay,+WI+54303/@44.5323914,-88.0436436,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8802fa9d4afd9653:0xd78c75851117e54!2m2!1d-88.0410687!2d44.5323876?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D', '_blank')}
+                    >
                       Get Directions →
                     </Button>
                   </div>
