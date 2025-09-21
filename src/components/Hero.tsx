@@ -13,17 +13,23 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground mb-8 leading-tight">
             Welcome
           </h1>
           
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-serif text-muted-foreground mb-8 leading-relaxed">
-            Green Bay Hmong Alliance Church
-          </h2>
+          <Button 
+            variant="primary" 
+            size="lg" 
+            onClick={scrollToServices}
+            className="group min-w-[200px]"
+          >
+            Join Us This Sunday
+            <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
+          </Button>
         </div>
         
         {/* Calendar */}
-        <div className="mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <div className="bg-card rounded-lg shadow-card overflow-hidden">
             <iframe 
               src="https://calendar.google.com/calendar/embed?src=gbhac1253%40gmail.com&ctz=America%2FChicago" 
@@ -35,19 +41,6 @@ const Hero = () => {
               className="w-full"
             />
           </div>
-        </div>
-        
-        {/* Button */}
-        <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <Button 
-            variant="primary" 
-            size="lg" 
-            onClick={scrollToServices}
-            className="group min-w-[200px]"
-          >
-            Join Us This Sunday
-            <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
-          </Button>
         </div>
       </div>
     </section>
