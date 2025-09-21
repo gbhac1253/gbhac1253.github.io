@@ -74,7 +74,7 @@ const Navigation = () => {
         </div>
 
         {/* Tablet Navigation - Horizontal Scrollable Tabs */}
-        <div className="hidden md:flex lg:hidden overflow-x-auto scrollbar-hide mt-4 pb-2">
+        <div className="hidden md:flex lg:hidden overflow-x-auto scrollbar-hide mt-1 pb-2">
           <div className="flex space-x-2 min-w-max px-2">
             {navItems.map((item) => (
               <Button
