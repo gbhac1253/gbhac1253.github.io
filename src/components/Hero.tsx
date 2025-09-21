@@ -13,11 +13,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground mb-8 leading-tight">
-            Welcome
-          </h1>
-          
-          <Button 
+          <Button
             variant="primary" 
             size="lg" 
             onClick={scrollToServices}
