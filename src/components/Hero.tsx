@@ -9,47 +9,46 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-hero" />
-      </div>
-      
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background py-20">
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="animate-fade-in-up">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-semibold text-primary-foreground mb-6 leading-tight">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 animate-fade-in-up">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground mb-6 leading-tight">
             Green Bay Hmong Alliance Church
           </h1>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-primary-foreground/95 mb-8 leading-relaxed">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-serif text-muted-foreground mb-8 leading-relaxed">
             A Place to Belong, A People to Grow With
           </h2>
-          
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            We are a community following Jesus, seeking to love God and serve our neighbors.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              onClick={scrollToServices}
-              className="group min-w-[200px]"
-            >
-              Join Us This Sunday
-              <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
-            </Button>
+        </div>
+        
+        {/* Calendar */}
+        <div className="mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-card rounded-lg shadow-card overflow-hidden">
+            <iframe 
+              src="https://calendar.google.com/calendar/embed?src=gbhac1253%40gmail.com&ctz=America%2FChicago" 
+              style={{ border: 0 }} 
+              width="100%" 
+              height="600" 
+              frameBorder="0" 
+              scrolling="no"
+              className="w-full"
+            />
           </div>
         </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-        <ArrowDown className="h-6 w-6 text-primary-foreground/70" />
+        
+        {/* Button */}
+        <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <Button 
+            variant="primary" 
+            size="lg" 
+            onClick={scrollToServices}
+            className="group min-w-[200px]"
+          >
+            Join Us This Sunday
+            <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
+          </Button>
+        </div>
       </div>
     </section>
   );
