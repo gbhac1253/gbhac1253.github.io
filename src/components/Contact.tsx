@@ -18,6 +18,22 @@ const Contact = () => {
           </p>
         </div>
         
+        {/* Interactive Map */}
+        <div className="mb-16 animate-fade-in-up">
+          <Card className="overflow-hidden border-0 shadow-card">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5688.3165809940465!2d-88.0436436232965!3d44.532391395125266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fa9d4afd9653%3A0xd78c75851117e54!2s1253%20Mather%20St%2C%20Green%20Bay%2C%20WI%2054303!5e0!3m2!1sen!2sus!4v1758420808865!5m2!1sen!2sus" 
+              width="100%" 
+              height="400" 
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            />
+          </Card>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="animate-fade-in-up">
