@@ -3,13 +3,32 @@ import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Determine active section
+      const sections = ['tithe', 'about', 'services', 'leadership', 'ministries', 'resources', 'contact'];
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+
+      if (currentSection) {
+        setActiveSection(`#${currentSection}`);
+      } else if (window.scrollY < 200) {
+        setActiveSection("#");
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once to set initial state
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -62,7 +81,11 @@ const Navigation = () => {
                 <Button
                   key={item.name}
                   variant="ghost"
-                  className="text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                  className={`transition-colors ${
+                    activeSection === item.href
+                      ? 'text-primary bg-primary/10 border border-primary/20'
+                      : 'text-foreground hover:text-primary hover:bg-primary/10'
+                  }`}
                   onClick={() => handleNavClick(item.href)}
                 >
                   {item.name}
@@ -81,7 +104,11 @@ const Navigation = () => {
                 key={item.name}
                 variant="ghost"
                 size="sm"
-                className="text-foreground hover:text-primary hover:bg-primary/10 whitespace-nowrap"
+                className={`whitespace-nowrap transition-colors ${
+                  activeSection === item.href
+                    ? 'text-primary bg-primary/10 border border-primary/20'
+                    : 'text-foreground hover:text-primary hover:bg-primary/10'
+                }`}
                 onClick={() => handleNavClick(item.href)}
               >
                 {item.name}
@@ -98,7 +125,11 @@ const Navigation = () => {
                 key={item.name}
                 variant="ghost"
                 size="sm"
-                className="text-foreground hover:text-primary hover:bg-primary/10 text-xs px-1 py-2 h-auto flex flex-col justify-center min-h-[2.5rem]"
+                className={`text-xs px-1 py-2 h-auto flex flex-col justify-center min-h-[2.5rem] transition-colors ${
+                  activeSection === item.href
+                    ? 'text-primary bg-primary/10 border border-primary/20'
+                    : 'text-foreground hover:text-primary hover:bg-primary/10'
+                }`}
                 onClick={() => handleNavClick(item.href)}
               >
                 <span className="w-full text-center leading-tight text-[10px]">{item.name}</span>
