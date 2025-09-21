@@ -106,7 +106,7 @@ const Services = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2 text-foreground">Accessibility</h4>
                     <p className="text-sm text-muted-foreground">
-                      Our facility is fully accessible with wheelchair ramps and accessible restrooms.
+                      Our facility has a wheelchair ramp for easy access.
                     </p>
                   </div>
                 </div>
