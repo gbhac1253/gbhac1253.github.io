@@ -30,7 +30,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            We are a Hmong community following Jesus, seeking to love God and serve our neighbors.
+            We are a community following Jesus, seeking to love God and serve our neighbors.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
