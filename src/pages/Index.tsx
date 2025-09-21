@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Leadership from "@/components/Leadership";
 import Ministries from "@/components/Ministries";
-import Events from "@/components/Events";
 import Resources from "@/components/Resources";
 import CallToAction from "@/components/CallToAction";
 import Contact from "@/components/Contact";
@@ -19,7 +18,6 @@ const Index = () => {
       <Tithe />
       <About />
       <Services />
-      <Events />
       <Leadership />
       <Ministries />
       <Resources />
