@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import LiveBanner from "@/components/LiveBanner";
 import Hero from "@/components/Hero";
 import Tithe from "@/components/Tithe";
 import About from "@/components/About";
@@ -13,6 +14,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <LiveBanner />
       <Navigation />
       <Hero />
       <Tithe />
