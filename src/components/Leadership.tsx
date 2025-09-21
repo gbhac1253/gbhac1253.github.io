@@ -3,18 +3,10 @@ import { Mail, Phone } from "lucide-react";
 
 const pastors = [
   {
-    name: "Pastor [Name]",
+    name: "Pastor Chao Xiong",
     title: "Senior Pastor",
-    description: "Leading our congregation with wisdom and compassion, Pastor [Name] has been serving our community for [X] years, dedicated to teaching God's word and shepherding our church family.",
+    description: "Leading our congregation with wisdom and compassion, Pastor Chao Xiong is dedicated to teaching God's word and shepherding our church family.",
     email: "pastor@gbhac.org",
-    phone: "(920) XXX-XXXX",
-    image: "/placeholder.svg" // Replace with actual pastor photo
-  },
-  {
-    name: "Pastor [Name]",
-    title: "Associate Pastor",
-    description: "Supporting our ministry with a heart for outreach and discipleship, Pastor [Name] focuses on connecting with our community and developing strong spiritual foundations.",
-    email: "associate@gbhac.org", 
     phone: "(920) XXX-XXXX",
     image: "/placeholder.svg" // Replace with actual pastor photo
   }
