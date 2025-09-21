@@ -94,7 +94,25 @@ const Events = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        {/* Google Calendar Section */}
+        <div className="mt-16 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <Card className="p-8 border-0 bg-card shadow-card">
+            <h3 className="text-2xl font-serif font-semibold mb-6 text-foreground text-center">
+              Church Calendar
+            </h3>
+            <div className="bg-muted rounded-lg h-96 flex items-center justify-center">
+              <div className="text-center">
+                <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">Google Calendar will be embedded here</p>
+                <p className="text-sm text-muted-foreground mt-2">
+                  View all church events, services, and activities in one place
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+        
+        <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <Button variant="primary" size="lg">
             View All Events
           </Button>
